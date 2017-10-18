@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblHint;
 @property (weak, nonatomic) IBOutlet UISlider *sliderTimer;
+@property (weak, nonatomic) IBOutlet UIImageView *BG;
 
 @end
 
@@ -28,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.BG.image = [UIImage imageNamed:@"images.jpeg"];
     score = 0;
     self.sliderTimer.value = 30;
     self.lblTimer.text = @"30";
